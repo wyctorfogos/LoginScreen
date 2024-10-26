@@ -1,15 +1,46 @@
-body{
-    background-color: lightcyan;
+/* Centralizar o container principal */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* cor de fundo */
+}
+
+/* Flex container para centralizar a box */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #ffffff; /* cor de fundo da box */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-
-.formUser{
-    background-color: black;
-    justify-content: center;
+.userInfo label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
 }
 
-.userInfo{
-    background-color: bisque;
-    text-justify: auto;
+.userInfo input[type="text"],
+.userInfo input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

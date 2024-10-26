@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="../styles/loginScreen.css">
+</head>
+<body>
     <header>
-        Login screen
+        <h1>Login Screen</h1>
     </header>
-    <body>
-        <div class="formUser" style="../styles/loginScreen.css">
-            <form class="">
-                <input type="area" title="userName">
-                <input type="area" title="passWord">
-                <button title="Login"
+    <div class="flex-container">
+        <div class="login-box">
+            <form class="userInfo">
+                <label for="userName">Username:</label>
+                <input type="text" id="userName" name="userName" title="userName">
+                
+                <label for="passWord">Password:</label>
+                <input type="password" id="passWord" name="passWord" title="passWord">
+                
+                <button type="submit" title="Login">Login</button>
             </form>
         </div>
-    </body>
+    </div>
+</body>
 </html>
